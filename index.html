@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <meta charset="utf-8"> 
+  </head>
+  <div class="container">
+    <div class="row">
+      <div class="col sm-3">
+        <div class="card carta">
+          <div class="card-header">
+            <!--<h3>FORMULARIO</h3>-->
+          </div>
+          <div class="card-body">
+            <form>
+              <h2 class="card-title">Datos Personales</h2>
+              <div   class="form-row">
+                <div class="form-group col-md-5">
+                  <label class="lead">Nombre</label>
+                  <input type="email" class="form-control" id="inputNombre" placeholder="">
+                </div>
+                <div class="form-group col-md-5">
+                  <label class="lead">Apellido</label>
+                  <input type="password" class="form-control" id="inputApe" placeholder="">
+                </div>
+                <div class="form-group col-md-2">
+                  <label class="lead">Edad</label>
+                  <input type="password" class="form-control" id="inputEdad" placeholder="">
+                </div>
+              </div>
+              <div   class="form-row">
+                <div class="form-group col-md-7">
+                  <label class="lead">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="">
+                </div>
+                <div class="form-group col-md-5">
+                  <label class="lead">Contraseña</label>
+                  <input type="password" class="form-control" id="inputContra" placeholder="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="lead">Direccion</label>
+                <input type="text" class="form-control" id="inputDirec" placeholder="">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label class="lead">Departamento</label>
+                  <input type="text" class="form-control" id="inputDepart">
+                </div>
+                <div class="form-group col-md-6">
+                  <label class="lead">Provincia</label>
+                  <input type="text" class="form-control" id="inputProv">
+                </div>
+              </div>
+            </form>
+            <div class="text-center card-footer text-danger">
+              Este formulario deberá llenarse Obligatoriamente
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col sm-9">
+        <div class="card carta2">
+          <div class="card-header">
+            <!--<h3>FORMULARIO</h3>-->
+          </div>
+          <div class="card-body">
+            <form like action='map'>
+              <h2 class="card-title">Cuestionario</h2>
+              <div class="form-group">
+                <div>
+                  <label class="lead">Viajaste a Europa o Asia en los ultimos 3 meses</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label">Si</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <label class="lead">Sintomas presentados</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Gripe</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Tos</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Fiebre</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Escalofrios</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Dolor Muscular</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Perdida de Apetito</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Malestar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label">Congestion Nasal</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <label class="lead">Algun familiar infectado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label">Si</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="lead">Que te parecen las medidas de Seguridad ...</label>
+                <textarea class="form-control" id="inputMedidas" rows="3"></textarea>
+              </div>
+              <div class="text-right">
+                <input id="goMap" type="submit" class="btn btn-outline-danger" value="Continuar">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+      background-image: url('corona.jpg');
+    }
+    div.container{
+      margin-left: 100px;
+      margin-top: 45px;
+    }
+    .carta{
+      width: 30rem;
+    }
+    .carta2{
+      width: 37rem;
+    }
+    label.lead{
+      font-size: 17px;
+    }
+    input.btn{
+      align-self: center;
+      margin-top: 8px;
+      width: 100%;
+      font-size: 17px;
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script type="text/javascript">
+    document.getElementById("goMap").onclick = function () {
+        window.location.href = 'map';
+    };
+  </script>
+
+
+</body></html>
