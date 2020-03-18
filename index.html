@@ -17,7 +17,7 @@
               <div   class="form-row">
                 <div class="form-group col-md-5">
                   <label class="lead">Nombre</label>
-                  <input type="email" class="form-control" id="inputNombre" placeholder="">
+                  <input type="text" class="form-control" id="inputNombre" placeholder="">
                 </div>
                 <div class="form-group col-md-5">
                   <label class="lead">Apellido</label>
@@ -25,21 +25,28 @@
                 </div>
                 <div class="form-group col-md-2">
                   <label class="lead">Edad</label>
-                  <input type="password" class="form-control" id="inputEdad" placeholder="">
+                  <input type="number" class="form-control" id="inputEdad" placeholder="">
                 </div>
               </div>
               <div   class="form-row">
-                <div class="form-group col-md-7">
-                  <label class="lead">Email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="">
+                <div class="form-group col-md-4">
+                  <label class="lead">DNI</label>
+                  <input type="number" class="form-control" id="inputDNI" placeholder="">
                 </div>
-                <div class="form-group col-md-5">
-                  <label class="lead">Contraseña</label>
-                  <input type="password" class="form-control" id="inputContra" placeholder="">
+                <div class="form-group col-md-4">
+                  <label class="lead">Teléfono</label>
+                  <input type="number" class="form-control" id="inputTel" placeholder="">
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="lead">Género</label>
+                  <select class="form-control" id="inputGenero">
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                  </select>
                 </div>
               </div>
               <div class="form-group">
-                <label class="lead">Direccion</label>
+                <label class="lead">Dirección</label>
                 <input type="text" class="form-control" id="inputDirec" placeholder="">
               </div>
               <div class="form-row">
@@ -65,11 +72,24 @@
             <!--<h3>FORMULARIO</h3>-->
           </div>
           <div class="card-body">
-            <form like action='map'>
+            <form like action="map.html">
               <h2 class="card-title">Cuestionario</h2>
               <div class="form-group">
                 <div>
                   <label class="lead">Viajaste a Europa o Asia en los ultimos 3 meses</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputViaje" value="option1">
+                  <label class="form-check-label">Si</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputViaje2" value="option2">
+                  <label class="form-check-label">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div>
+                  <label class="lead">Algun familiar infectado</label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
@@ -89,45 +109,32 @@
                   <label class="form-check-label">Gripe</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
                   <label class="form-check-label">Tos</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
                   <label class="form-check-label">Fiebre</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option4">
                   <label class="form-check-label">Escalofrios</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
                   <label class="form-check-label">Dolor Muscular</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option6">
                   <label class="form-check-label">Perdida de Apetito</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option7">
                   <label class="form-check-label">Malestar</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option8">
                   <label class="form-check-label">Congestion Nasal</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div>
-                  <label class="lead">Algun familiar infectado</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label">Si</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label">No</label>
                 </div>
               </div>
               <div class="form-group">
@@ -148,7 +155,7 @@
     body {
       background-image: url('corona.jpg');
     }
-    div.container{
+    .container{
       margin-left: 100px;
       margin-top: 45px;
     }
@@ -156,15 +163,14 @@
       width: 30rem;
     }
     .carta2{
-      width: 37rem;
+      width: 35rem;
     }
     label.lead{
       font-size: 17px;
     }
-    input.btn{
-      align-self: center;
+    .btn{
       margin-top: 8px;
-      width: 100%;
+      width: 40%;
       font-size: 17px;
     }
 
