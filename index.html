@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col sm-3">
+    <div class="container" id="form">
+      <div class="card-deck">
           <div class="card carta">
-            <div class="card-header">
+            <div class="card-header header-color">
               <!--<h3>FORMULARIO</h3>-->
             </div>
-            <div class="card-body">
+            <div class="card-body body-color">
               <form>
                 <h2 class="card-title">Datos Personales</h2>
                 <div   class="form-row">
@@ -67,13 +66,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col sm-9">
-          <div class="card carta2">
-            <div class="card-header">
+        
+          <div class="card carta">
+            <div class="card-header header-color">
               <!--<h3>FORMULARIO</h3>-->
             </div>
-            <div class="card-body">
+            <div class="card-body body-color">
               <form>
                 <h2 class="card-title">Cuestionario</h2>
                 <div class="form-group">
@@ -136,28 +134,61 @@
                   <textarea class="form-control" id="inputMedidas" rows="3"></textarea>
                 </div>
                 <div class="text-right">
-                  <input id="goMap" type="submit" class="btn btn-outline-danger" value="Continuar">
+                  <input id="goMap" type="submit" class="btn btn-danger" value="Continuar">
                 </div>
               </form>
             </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="complete" disabled>
+      <div class="card text-center">
+        <div class="card-body bg-light">
+          <div class="text-center">
+            <img src="check2.png" class="final">
           </div>
         </div>
+        <div class="text-center card-footer text-light bg-danger">
+          <h3 class="card-title">CUESTIONARIO COMPLETADO</h3>
         </div>
       </div>
     </div>
     <style>
+      div[disabled]{
+        display: none;
+      }
+      .final{
+        height: 220px;
+        width: 220px;
+        opacity: 0.7;
+      }
+      .contenedor{
+        margin-left: 40%;
+        margin-top: 50px;
+      }
+      .complete{
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        opacity: 0.6;
+      }
       body {
         background-image: url('corona.jpg');
       }
       .container{
-        margin-left: 100px;
-        margin-top: 45px;
+        margin-top: 50px;
+      }
+      .cont{
+        margin-bottom: 50px;
       }
       .carta{
-        width: 30rem;
+        width: 23rem;
       }
-      .carta2{
-        width: 30rem;
+      .header-color{
+        background-color: #FFD5C5 !important;
+      }
+      .body-color{
+        background-color: #FFF4F0 !important;
       }
       label.lead{
         font-size: 17px;
@@ -211,6 +242,8 @@
             sintomas:{gripe:gripe.checked,tos:tos.checked,fiebre:fiebre.checked,
               escalofrios:escalo.checked,dolorMuscular:dolor.checked,congestion:respirar.checked}
           });
+          document.getElementById('form').style.display = "none";
+          document.getElementById('complete').style.display = "block";
         });
     </script>
   </body>
