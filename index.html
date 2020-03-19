@@ -4,183 +4,214 @@
     <title>Example</title>
     <meta charset="utf-8"> 
   </head>
-  <div class="container">
-    <div class="row">
-      <div class="col sm-3">
-        <div class="card carta">
-          <div class="card-header">
-            <!--<h3>FORMULARIO</h3>-->
-          </div>
-          <div class="card-body">
-            <form>
-              <h2 class="card-title">Datos Personales</h2>
-              <div   class="form-row">
-                <div class="form-group col-md-5">
-                  <label class="lead">Nombre</label>
-                  <input type="text" class="form-control" id="inputNombre" placeholder="">
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col sm-3">
+          <div class="card carta">
+            <div class="card-header">
+              <!--<h3>FORMULARIO</h3>-->
+            </div>
+            <div class="card-body">
+              <form>
+                <h2 class="card-title">Datos Personales</h2>
+                <div   class="form-row">
+                  <div class="form-group col-md-5">
+                    <label class="lead">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="">
+                  </div>
+                  <div class="form-group col-md-5">
+                    <label class="lead">Apellido</label>
+                    <input type="text" class="form-control" id="inputLast" placeholder="">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label class="lead">Edad</label>
+                    <input type="number" class="form-control" id="inputAge" placeholder="">
+                  </div>
                 </div>
-                <div class="form-group col-md-5">
-                  <label class="lead">Apellido</label>
-                  <input type="password" class="form-control" id="inputApe" placeholder="">
+                <div   class="form-row">
+                  <div class="form-group col-md-4">
+                    <label class="lead">DNI</label>
+                    <input type="number" class="form-control" id="inputDNI" placeholder="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="lead">Teléfono</label>
+                    <input type="number" class="form-control" id="inputPhone" placeholder="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label class="lead">Género</label>
+                    <select class="form-control" id="inputGenre">
+                      <option>Hombre</option>
+                      <option>Mujer</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="form-group col-md-2">
-                  <label class="lead">Edad</label>
-                  <input type="number" class="form-control" id="inputEdad" placeholder="">
+                <div class="form-group">
+                  <label class="lead">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddr" placeholder="">
                 </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label class="lead">Departamento</label>
+                    <input type="text" class="form-control" id="inputDepart">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="lead">Provincia</label>
+                    <input type="text" class="form-control" id="inputProv">
+                  </div>
+                </div>
+              </form>
+              <div class="text-center card-footer text-danger">
+                Este formulario deberá llenarse Obligatoriamente
               </div>
-              <div   class="form-row">
-                <div class="form-group col-md-4">
-                  <label class="lead">DNI</label>
-                  <input type="number" class="form-control" id="inputDNI" placeholder="">
-                </div>
-                <div class="form-group col-md-4">
-                  <label class="lead">Teléfono</label>
-                  <input type="number" class="form-control" id="inputTel" placeholder="">
-                </div>
-                <div class="form-group col-md-4">
-                  <label class="lead">Género</label>
-                  <select class="form-control" id="inputGenero">
-                    <option>Hombre</option>
-                    <option>Mujer</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="lead">Dirección</label>
-                <input type="text" class="form-control" id="inputDirec" placeholder="">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label class="lead">Departamento</label>
-                  <input type="text" class="form-control" id="inputDepart">
-                </div>
-                <div class="form-group col-md-6">
-                  <label class="lead">Provincia</label>
-                  <input type="text" class="form-control" id="inputProv">
-                </div>
-              </div>
-            </form>
-            <div class="text-center card-footer text-danger">
-              Este formulario deberá llenarse Obligatoriamente
             </div>
           </div>
         </div>
-      </div>
-      <div class="col sm-9">
-        <div class="card carta2">
-          <div class="card-header">
-            <!--<h3>FORMULARIO</h3>-->
-          </div>
-          <div class="card-body">
-            <form like action="map.html">
-              <h2 class="card-title">Cuestionario</h2>
-              <div class="form-group">
-                <div>
-                  <label class="lead">Viajaste a Europa o Asia en los ultimos 3 meses</label>
+        <div class="col sm-9">
+          <div class="card carta2">
+            <div class="card-header">
+              <!--<h3>FORMULARIO</h3>-->
+            </div>
+            <div class="card-body">
+              <form>
+                <h2 class="card-title">Cuestionario</h2>
+                <div class="form-group">
+                  <div>
+                    <label class="lead">Viajaste a Europa o Asia en los ultimos 3 meses</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="inputViaje" value="option1">
+                    <label class="form-check-label">Si</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="inputViaje2" value="option2">
+                    <label class="form-check-label">No</label>
+                  </div>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputViaje" value="option1">
-                  <label class="form-check-label">Si</label>
+                <div class="form-group">
+                  <div>
+                    <label class="lead">Algun familiar infectado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label">Si</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label">No</label>
+                  </div>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inputViaje2" value="option2">
-                  <label class="form-check-label">No</label>
+                <div class="form-group">
+                  <div>
+                    <label class="lead">Sintomas presentados</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label">Gripe</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
+                    <label class="form-check-label">Tos</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
+                    <label class="form-check-label">Fiebre</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option4">
+                    <label class="form-check-label">Escalofrios</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
+                    <label class="form-check-label">Dolor Muscular</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option6">
+                    <label class="form-check-label">Perdida de Apetito</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option7">
+                    <label class="form-check-label">Malestar</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option8">
+                    <label class="form-check-label">Congestion Nasal</label>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <div>
-                  <label class="lead">Algun familiar infectado</label>
+                <div class="form-group">
+                  <label class="lead">Que te parecen las medidas de Seguridad ...</label>
+                  <textarea class="form-control" id="inputMedidas" rows="3"></textarea>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <label class="form-check-label">Si</label>
+                <div class="text-right">
+                  <input id="goMap" type="submit" class="btn btn-outline-danger" value="Continuar">
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                  <label class="form-check-label">No</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <div>
-                  <label class="lead">Sintomas presentados</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label">Gripe</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">
-                  <label class="form-check-label">Tos</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
-                  <label class="form-check-label">Fiebre</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option4">
-                  <label class="form-check-label">Escalofrios</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option5">
-                  <label class="form-check-label">Dolor Muscular</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option6">
-                  <label class="form-check-label">Perdida de Apetito</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option7">
-                  <label class="form-check-label">Malestar</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option8">
-                  <label class="form-check-label">Congestion Nasal</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="lead">Que te parecen las medidas de Seguridad ...</label>
-                <textarea class="form-control" id="inputMedidas" rows="3"></textarea>
-              </div>
-              <div class="text-right">
-                <input id="goMap" type="submit" class="btn btn-outline-danger" value="Continuar">
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+        </div>
       </div>
     </div>
-  </div>
-  <style>
-    body {
-      background-image: url('corona.jpg');
-    }
-    .container{
-      margin-left: 100px;
-      margin-top: 45px;
-    }
-    .carta{
-      width: 30rem;
-    }
-    .carta2{
-      width: 35rem;
-    }
-    label.lead{
-      font-size: 17px;
-    }
-    .btn{
-      margin-top: 8px;
-      width: 40%;
-      font-size: 17px;
-    }
+    <style>
+      body {
+        background-image: url('corona.jpg');
+      }
+      .container{
+        margin-left: 100px;
+        margin-top: 45px;
+      }
+      .carta{
+        width: 30rem;
+      }
+      .carta2{
+        width: 35rem;
+      }
+      label.lead{
+        font-size: 17px;
+      }
+      .btn{
+        margin-top: 8px;
+        width: 40%;
+        font-size: 17px;
+      }
 
-  </style>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script type="text/javascript">
-    document.getElementById("goMap").onclick = function () {
-        window.location.href = 'map';
-    };
-  </script>
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyArUAd96C2jFtJbKT_kGzs7dEOL-DTCEv4",
+        authDomain: "maps-7a0b8.firebaseapp.com",
+        databaseURL: "https://maps-7a0b8.firebaseio.com",
+        projectId: "maps-7a0b8",
+        storageBucket: "maps-7a0b8.appspot.com",
+        messagingSenderId: "794864320619",
+        appId: "1:794864320619:web:01d093cb62da53ee36312e",
+        measurementId: "G-GLRNRX1M9V"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script>
+        const DNI = document.getElementById('inputDNI');
+        const edad = document.getElementById('inputAge');
+        const tel = document.getElementById('inputPhone');
+        const gen = document.getElementById('inputGenre');
+        const dep = document.getElementById('inputDepart');
+        const prov = document.getElementById('inputProv');
 
+        const inputBtn = document.getElementById('goMap')
 
-</body></html>
+        const rootRef = firebase.database().ref('usuario');
+
+        inputBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          rootRef.push({
+            DNI:DNI.value,edad:edad.value,celular:tel.value,genero:gen.value,depart:dep.value,prov:prov.value
+          });
+        });
+    </script>
+  </body>
+</html>
