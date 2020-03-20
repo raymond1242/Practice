@@ -1,0 +1,52 @@
+
+div[disabled] {
+    display: none;
+}
+
+.final {
+    height: 220px;
+    width: 220px;
+    opacity: 0.7;
+}
+
+.contenedor {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.complete {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    opacity: 0.6;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.cont {
+    margin-bottom: 50px;
+}
+
+.carta {
+    width: 23rem;
+}
+
+.header-color {
+    background-color: #FFD5C5 !important;
+}
+
+.body-color {
+    background-color: #FFF4F0 !important;
+}
+
+label.lead {
+    font-size: 17px;
+}
+
+.btn {
+    margin-top: 8px;
+    width: 40%;
+    font-size: 17px;
+}
