@@ -36,7 +36,7 @@ div[disabled] {
 }
 
 .header-color {
-    background-color: #FFD5C5 !important;
+    background-color: orange !important;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
