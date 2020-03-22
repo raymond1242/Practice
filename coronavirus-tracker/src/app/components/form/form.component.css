@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 div[disabled] {
     display: none;
 }
@@ -22,7 +24,7 @@ div[disabled] {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .cont {
@@ -30,11 +32,14 @@ div[disabled] {
 }
 
 .carta {
-    width: 23rem;
+    /*width: 23rem;*/
 }
 
 .header-color {
     background-color: #FFD5C5 !important;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .body-color {
@@ -49,4 +54,25 @@ label.lead {
     margin-top: 8px;
     width: 40%;
     font-size: 17px;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 9.4px 0px 9.4px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.2em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.4em) scale(.75);
+  width: 133.33333%;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.mat-radio-group {
+  margin-left: 10px
 }
