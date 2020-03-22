@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.back-font {
+  background: url('assets/img/virus-mol.jpg') no-repeat;
+  background-size: cover;
+}

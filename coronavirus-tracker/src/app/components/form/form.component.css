@@ -39,6 +39,7 @@ div[disabled] {
     background-color: #FFD5C5 !important;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .body-color {
