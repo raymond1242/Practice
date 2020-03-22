@@ -6,11 +6,11 @@ import { MapsComponent } from './components/maps/maps.component'
 
 const routes: Routes = [
   {
-    path: 'forms',
+    path: '',
     component: FormComponent,
   },
   {
-    path: '',
+    path: 'forms',
     component: FormComponent,
   },
   {
