@@ -76,3 +76,9 @@ label.lead {
 .mat-radio-group {
   margin-left: 10px
 }
+
+.footer {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 15px;
+}

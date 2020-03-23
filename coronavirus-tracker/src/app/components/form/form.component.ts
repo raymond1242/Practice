@@ -15,15 +15,15 @@ export class FormComponent implements OnInit {
     surname: new FormControl(''),
     genre: new FormControl('', [Validators.required]),
     age: new FormControl('', [Validators.required]),
-    email: new FormControl('',[Validators.email]),
+    email: new FormControl('', [Validators.email]),
     travel: new FormControl('', [Validators.required]),
     family: new FormControl('', [Validators.required]),
-    checkFlu: new FormControl(''),
+    friend: new FormControl('', [Validators.required]),
     checkCough: new FormControl(''),
     checkFever: new FormControl(''),
-    checkShaking: new FormControl(''),
-    checkPain: new FormControl(''),
     checkBreathe: new FormControl(''),
+    checkNose: new FormControl(''),
+    checkNeck: new FormControl(''),
     opinion: new FormControl(''),
   });
 
@@ -53,7 +53,41 @@ export class FormComponent implements OnInit {
     });
   }
 
+  family() {
+    return this.form.value.family === 'Y';
+  }
+
+  risk() {
+    return this.form.value.travel === 'Y' || this.form.value.friend === 'Y';
+  }
+
   danger() {
+    if (this.family() && this.form.value.checkBreathe) {
+      return 3;
+    } else if (this.family() && this.form.value.checkCough) {
+      return 3;
+    } else if (this.family() && this.form.value.checkFever) {
+      return 3;
+    } else if (this.family() && this.form.value.checkNose) {
+      return 3;
+    } else if (this.family() && this.form.value.checkNeck) {
+      return 3;
+    }
+
+    if (this.risk() && this.form.value.checkBreathe) {
+      return 3;
+    }
+
+    if (this.risk() && (this.form.value.checkCough || this.form.value.checkFever || this.form.value.checkNose
+      || this.form.value.checkNeck)) {
+      return 2;
+    }
+
+    if (this.form.value.checkBreathe && (this.form.value.checkCough || this.form.value.checkFever
+      || this.form.value.checkNose || this.form.value.checkNeck)) {
+      return 2;
+    }
+
     return 1;
   }
 
@@ -66,7 +100,6 @@ export class FormComponent implements OnInit {
       } else {
         this.open(this.badDialog);
       }
-      this.open(this.goodDialog);
     } else {
       this.open(this.incomplete);
     }
