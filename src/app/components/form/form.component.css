@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+div[disabled] {
+    display: none;
+}
+
+.final {
+    height: 220px;
+    width: 220px;
+    opacity: 0.7;
+}
+
+.contenedor {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.complete {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    opacity: 0.6;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.cont {
+    margin-bottom: 50px;
+}
+
+.carta {
+    /*width: 23rem;*/
+}
+
+.header-color {
+    background-color: orange !important;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.body-color {
+    background-color: #FFF4F0 !important;
+}
+
+label.lead {
+    font-size: 17px;
+}
+
+.btn {
+    margin-top: 8px;
+    width: 40%;
+    font-size: 17px;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 9.4px 0px 9.4px !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.2em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.4em) scale(.75);
+  width: 133.33333%;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.mat-radio-group {
+  margin-left: 10px
+}
+
+.footer {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 15px;
+}

@@ -1,0 +1,219 @@
+<ng-template #goodDialog>
+  <h1 mat-dialog-title>Buenas Noticias</h1>
+  <div mat-dialog-content>
+    <p>Hay muy poca probabilidad de que tenga el COVID 19</p>
+    <p>Probabilidad: <b style="color:green"> Baja </b> </p>
+    <p>Para despejar cualquier duda llame al <b>113</b></p>
+    <br/>
+
+    <a href="https://www.gob.pe/8371-ministerio-de-salud-que-son-los-coronavirus-y-como-protegerte">
+    Conoce qué es el coronavirus y cómo protegerte
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8737-ministerio-de-salud-coronavirus-medidas-de-prevencion-en-el-trabajo">
+      Coronavirus: medidas de prevención en el trabajo
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8734-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-la-escuela">
+      Coronavirus: medidas de protección en la escuela
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8743-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-los-centros-de-educacion-superior">
+      Coronavirus: medidas de protección en los centros de educación superior
+    </a>
+    <br/>
+  </div>
+
+  <div mat-dialog-actions class="d-flex justify-content-center">
+    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+  </div>
+</ng-template>
+
+<ng-template #takecare>
+  <h1 mat-dialog-title>Ten cuidado</h1>
+  <div mat-dialog-content>
+    <p>Es algo probable q haya adquirido el COVID 19, quedese en su casa y en cuarentena.</p>
+    <p>Probabilidad: <b style="color:yellow"> Media </b> </p>
+    <p>Despeje dudas llamando al <b>113</b></p>
+    <br/>
+
+    <a href="https://www.gob.pe/8371-ministerio-de-salud-que-son-los-coronavirus-y-como-protegerte">
+      Conoce qué es el coronavirus y cómo protegerte
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8737-ministerio-de-salud-coronavirus-medidas-de-prevencion-en-el-trabajo">
+      Coronavirus: medidas de prevención en el trabajo
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8734-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-la-escuela">
+      Coronavirus: medidas de protección en la escuela
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8743-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-los-centros-de-educacion-superior">
+      Coronavirus: medidas de protección en los centros de educación superior
+    </a>
+    <br/>
+  </div>
+  <div mat-dialog-actions class="d-flex justify-content-center">
+    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+  </div>
+</ng-template>
+
+<ng-template #badDialog>
+  <h1 mat-dialog-title>Alerta</h1>
+  <div mat-dialog-content>
+    <p>Es muy probable que haya adquirido el COVID-19.</p>
+    <p>Llame al <b>113</b> y mantengase aislado</p>
+    <p>Probabilidad: <b style="color:red"> Alta </b> </p>
+    <br/>
+
+    <a href="https://www.gob.pe/8371-ministerio-de-salud-que-son-los-coronavirus-y-como-protegerte">
+      Conoce qué es el coronavirus y cómo protegerte
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8737-ministerio-de-salud-coronavirus-medidas-de-prevencion-en-el-trabajo">
+      Coronavirus: medidas de prevención en el trabajo
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8734-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-la-escuela">
+      Coronavirus: medidas de protección en la escuela
+    </a>
+    <br/>
+    <a href="https://www.gob.pe/8743-ministerio-de-educacion-coronavirus-medidas-de-proteccion-en-los-centros-de-educacion-superior">
+      Coronavirus: medidas de protección en los centros de educación superior
+    </a>
+    <br/>
+  </div>
+  <div mat-dialog-actions class="d-flex justify-content-center">
+    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+  </div>
+</ng-template>
+
+
+<ng-template #incomplete>
+  <h1 mat-dialog-title>Ayúdanos a completar tu análisis</h1>
+  <div mat-dialog-content>
+    <p>Los siguientes campos son obligatorios </p>
+    <ul>
+      <li>
+        Género
+      </li>
+      <li>
+        Edad
+      </li>
+      <li>
+        Y las dos preguntas
+      </li>
+    </ul>
+  </div>
+  <div mat-dialog-actions class="d-flex justify-content-center">
+    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+  </div>
+</ng-template>
+
+<div class="form-row">
+    <div class="container col-md-6">
+      <form  [formGroup]="form" (ngSubmit)="func()">
+        <div class="card-deck">
+          <div class="card carta">
+            <div class="card-header header-color header-personal-data">
+                <h5><b>Test COVID-19</b></h5>
+            </div>
+            <div class="card-body body-color">
+
+              <div class="form-row">
+
+                <mat-form-field class="col-md-6" appearance="outline">
+                  <mat-label>Nombres</mat-label>
+                  <input matInput placeholder="" formControlName="name">
+                </mat-form-field>
+
+                <mat-form-field class="col-md-6" appearance="outline">
+                  <mat-label>Apellidos</mat-label>
+                  <input matInput placeholder="" formControlName="surname">
+                </mat-form-field>
+
+              </div>
+
+              <div  class="form-row">
+
+                <mat-form-field class="col-md-4" appearance="outline">
+                  <mat-label>Género</mat-label>
+                  <mat-select formControlName="genre" required>
+                    <mat-option value="M"> Masculino </mat-option>
+                    <mat-option value="F"> Femenino </mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="col-md-4" appearance="outline">
+                  <mat-label>Edad</mat-label>
+                  <input matInput type="number" placeholder="" formControlName="age" required>
+                </mat-form-field>
+
+                <mat-form-field class="col-md-4" appearance="outline">
+                  <mat-label>Correo</mat-label>
+                  <input matInput type="email" placeholder="" formControlName="email">
+                </mat-form-field>
+
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label class="lead">¿Viajaste al extranjero en los ùltimos 14 dìas? *</label>
+                </div>
+                <mat-radio-group aria-label="Select an option" formControlName="travel">
+                  <mat-radio-button value="Y">Si</mat-radio-button>
+                  <mat-radio-button value="N">No</mat-radio-button>
+                </mat-radio-group>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label class="lead">¿Estuviste con alguna persona que viajò al extranjero en los ùltimos 14 dìas? *</label>
+                </div>
+                <mat-radio-group aria-label="Select an option" formControlName="friend">
+                  <mat-radio-button value="Y">Si</mat-radio-button>
+                  <mat-radio-button value="N">No</mat-radio-button>
+                </mat-radio-group>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label class="lead">¿Algün familiar o conocido infectado con el COVID-19? *</label>
+                </div>
+                <mat-radio-group aria-label="Select an option" formControlName="family">
+                  <mat-radio-button value="Y">Si</mat-radio-button>
+                  <mat-radio-button value="N">No</mat-radio-button>
+                </mat-radio-group>
+              </div>
+
+              <div class="form-group">
+                <div>
+                  <label class="lead">Síntomas presentados</label>
+                </div>
+                <div>
+                  <mat-checkbox class="col-md-5" formControlName="checkCough">Tos</mat-checkbox>
+                  <mat-checkbox class="col-md-5" formControlName="checkFever">Fiebre</mat-checkbox>
+                  <mat-checkbox class="col-md-5" formControlName="checkNose">Congestiòn Nasal</mat-checkbox>
+                  <mat-checkbox class="col-md-5" formControlName="checkNeck">Dolor de garganta</mat-checkbox>
+                  <mat-checkbox class="col-md-5" formControlName="checkBreathe">Dificultad para respirar</mat-checkbox>
+                </div>
+              </div>
+              <div class="form-group">
+                <mat-form-field class="col-md-12" appearance="outline">
+                  <mat-label class="lead">Comentario acerca su situaciòn actual</mat-label>
+                  <textarea matInput rows="3" placeholder="" formControlName="opinion"></textarea>
+                </mat-form-field>
+              </div>
+
+              <div class="text-right">
+                <button type="submit" mat-flat-button color="warn" class="btn" >Enviar</button>
+              </div>
+              <div class="footer"><b>Recuerde que este test jamàs remplazarà el diagnòstico de un mèdico</b></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br/>
+    </div>
+</div>
