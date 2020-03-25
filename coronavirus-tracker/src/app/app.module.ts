@@ -18,13 +18,19 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { KitEquipmentComponent } from './components/kit-equipment/kit-equipment.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    MapsComponent
+    MapsComponent,
+    NavbarComponent,
+    LandingComponent,
+    KitEquipmentComponent
   ],
   imports: [
     BrowserModule,
