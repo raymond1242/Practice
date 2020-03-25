@@ -1,6 +1,8 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { AngularFireDatabase } from '@angular/fire/database'
+
 
 @Component({
   selector: 'app-form',
@@ -41,13 +43,13 @@ export class FormComponent implements OnInit {
 
   constructor(
     public dialog: MatDialog,
-  ) {
-  }
+    public database: AngularFireDatabase
+  ) {}
 
   ngOnInit() {
   }
 
-  open(content) {
+  open(content: any) {
     this.modalRef = this.dialog.open(content, {
       width: '350px',
     });
@@ -103,5 +105,25 @@ export class FormComponent implements OnInit {
     } else {
       this.open(this.incomplete);
     }
+
+    this.database.list('usuario').push({
+      name: this.form.value.name,
+      lastName: this.form.value.surname,
+      genre: this.form.value.genre,
+      age: this.form.value.age,
+      email: this.form.value.email,
+      traveled: this.form.value.travel,
+      family: this.form.value.family,
+      friend: this.form.value.friend,
+      opinion: this.form.value.opinion,
+      symptoms:{
+        cough: this.form.value.checkCough,
+        fever: this.form.value.checkFever,
+        breathe: this.form.value.checkBreathe,
+        nose: this.form.value.checkNose,
+        neck: this.form.value.checkNeck,
+      }
+    });
+
   }
 }
