@@ -41,7 +41,10 @@ export class FormComponent implements OnInit {
   @ViewChild('incomplete', { static: true }) incomplete:
     TemplateRef<any>;
 
-  constructor(public dialog: MatDialog,public database: AngularFireDatabase) {}
+  constructor(
+    public dialog: MatDialog,
+    public database: AngularFireDatabase
+  ) {}
 
   ngOnInit() {
   }
