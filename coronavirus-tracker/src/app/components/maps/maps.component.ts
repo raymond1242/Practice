@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database'
 
 @Component({
   selector: 'app-maps',
@@ -7,13 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapsComponent implements OnInit {
 
-  latitude = -28.68352;
-  longitude = -147.20785;
-  mapType = 'satellite';
+  latitude =  -9.0431800;
+  longitude = -75.0282400;
+  zoom = 5;
+  mapType = 'hybrid';
+  data: AngularFireList<any>;
+  users: any;
 
-  constructor() { }
+  constructor(
+    private database: AngularFireDatabase
+  ) { }
 
   ngOnInit() {
+    this.data = this.database.list('/usuario');
+    this.data.valueChanges().subscribe(users => {
+      this.users = users;
+      console.log(this.users);
+    });
   }
-
 }

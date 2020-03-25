@@ -3,3 +3,22 @@ agm-map {
     height: 500px;
     width: 1000px;
 }
+
+.container {
+    margin-top: 30px;
+}
+
+.cont {
+    margin-bottom: 50px;
+}
+
+.header-color {
+    background-color: orange !important;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.body-color {
+    background-color: #FFF4F0 !important;
+}
