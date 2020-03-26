@@ -2,6 +2,7 @@ import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AngularFireDatabase } from '@angular/fire/database'
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -28,6 +29,8 @@ export class FormComponent implements OnInit {
     checkNeck: new FormControl(''),
     opinion: new FormControl(''),
   });
+  lat:number;
+  lng:number;
 
   @ViewChild('badDialog', { static: true }) badDialog:
     TemplateRef<any>;
@@ -44,7 +47,28 @@ export class FormComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     public database: AngularFireDatabase
-  ) {}
+  ) {
+    if (navigator.geolocation) {
+      
+    } else {
+      // no can do
+    }
+  }
+
+  getPosition(): Promise<any>
+  {
+    return new Promise((resolve, reject) => {
+
+      navigator.geolocation.getCurrentPosition(resp => {
+
+          resolve({lng: resp.coords.longitude, lat: resp.coords.latitude});
+        },
+        err => {
+          reject(err);
+        });
+    });
+
+  }
 
   ngOnInit() {
   }
@@ -94,6 +118,11 @@ export class FormComponent implements OnInit {
   }
 
   func() {
+    navigator.geolocation.getCurrentPosition( pos => {
+      this.lng = +pos.coords.longitude;
+      this.lat = +pos.coords.latitude;
+    });
+    console.log(this.lng, this.lat)
     if (this.form.valid) {
       if (this.danger() === 1) {
         this.open(this.goodDialog);
@@ -106,24 +135,19 @@ export class FormComponent implements OnInit {
       this.open(this.incomplete);
     }
 
-    this.database.list('usuario').push({
-      name: this.form.value.name,
-      lastName: this.form.value.surname,
-      genre: this.form.value.genre,
-      age: this.form.value.age,
-      email: this.form.value.email,
-      traveled: this.form.value.travel,
-      family: this.form.value.family,
-      friend: this.form.value.friend,
-      opinion: this.form.value.opinion,
-      symptoms:{
-        cough: this.form.value.checkCough,
-        fever: this.form.value.checkFever,
-        breathe: this.form.value.checkBreathe,
-        nose: this.form.value.checkNose,
-        neck: this.form.value.checkNeck,
-      }
-    });
+    this.getPosition().then(pos=>
+      {
+         this.database.list('usuario').push({
+          name: this.form.value.name,
+          lastName: this.form.value.surname,
+          genre: this.form.value.genre,
+          age: this.form.value.age,
+          email: this.form.value.email,
+          opinion: this.form.value.opinion,
+          lng: pos.lng,
+          lat: pos.lat,
+        });
+      });
 
   }
 }

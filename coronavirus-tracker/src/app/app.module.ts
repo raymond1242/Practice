@@ -22,7 +22,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { KitEquipmentComponent } from './components/kit-equipment/kit-equipment.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
