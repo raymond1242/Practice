@@ -3,23 +3,22 @@
 <app-navbar></app-navbar>
 <div class="container">
     <div class="form-row" style="margin-top: 40px;">
-            <div class="container">
-                <div class="card-deck">
-                        <div class="card carta">
-                            <div class="card-header header-color header-personal-data">
-                                <h5><b>Test COVID-19</b></h5>
-                            </div>
-                            <div class="card-body body-color">
-                
-                            <div class="form-row d-flex justify-content-center">
-                                <h3>Análisis General</h3>
-                                <agm-map [latitude]='latitude' [longitude]='longitude' 
-                                    [mapTypeId]='mapType' [zoom]="zoom" class="d-flex justify-content-center"
-                                    style="width: 90%;">
-                                </agm-map>
-                            </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card carta">
+                    <div class="card-header header-color header-personal-data">
+                        <h5><b>Mapa de Riesgo</b></h5>
+                    </div>
+                    <div class="card-body body-color">
+                        <div class="form-row d-flex justify-content-center">
+                            <agm-map [latitude]='latitude' [longitude]='longitude' 
+                                [mapTypeId]='mapType' [zoom]="zoom" class="d-flex justify-content-center"
+                                style="width: 90%;" (mapReady)="onMapLoad($event)">
+                            </agm-map>
                         </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>

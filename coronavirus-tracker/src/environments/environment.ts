@@ -15,7 +15,8 @@ export const environment = {
     measurementId: "G-GLRNRX1M9V"
   },
   mapsApiKey : {
-    apiKey: 'AIzaSyDqlZqseq8qla50cZHhMiwx-vknoRSUVds'
+    apiKey: 'AIzaSyDqlZqseq8qla50cZHhMiwx-vknoRSUVds',
+    libraries: ['visualization'],
   }
 };
 
