@@ -2,3 +2,89 @@
 
 <app-navbar></app-navbar>
 <br/>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/f9e21cba52.js" crossorigin="anonymous"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<br/>
+<div class="container">
+    <ng-container *ngIf="dataWorld">
+        <div class="row">
+            <br/>
+            <div class="col text-center">
+                <h2>Estado Actual de Pandemia en el Mundo</h2>
+                <p>Cantidad de Casos:</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-4">
+                <div class="counter">
+                    <i class="fas fa-user-md fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataWorld['confirmed']}}</h2>
+                    <p class="count-text ">Confirmados</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="counter">
+                    <i class="fas fa-notes-medical fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataWorld['recovered']}}</h2>
+                    <p class="count-text ">Recuperados</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="counter">
+                    <i class="fas fa-book-dead fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataWorld['deaths']}}</h2>
+                    <p class="count-text ">Fallecidos</p>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="!dataWorld">
+        <div class="col text-center">
+            <br/><br/><br/><br/><br/><br/>
+            <h2>Espere un momento ...</h2>
+        </div>
+    </ng-container>
+
+    <br/><br/>
+    <ng-container *ngIf="dataPeru">
+        <div class="row">
+            <br/>
+            <div class="col text-center">
+                <h2>Estado Actual de la Pandemia en el Perú</h2>
+                <p>Cantidad de Casos:</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-user-md fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataPeru['confirmed']}}</h2>
+                    <p class="count-text ">Confirmados</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-notes-medical fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataPeru['recovered']}}</h2>
+                    <p class="count-text ">Recuperados</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-book-dead fa-2x"></i>
+                    <h2 class="timer count-title count-number">{{dataPeru['deaths']}}</h2>
+                    <p class="count-text ">Fallecidos</p>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>
