@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;}
 
-.back-font {
-  background: url('assets/img/virus-mol.jpg') no-repeat;
+/* .back-font {
+  background: url('assets/img/face2.jpg') no-repeat;
   background-size: cover;
-}
+} */

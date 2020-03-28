@@ -1,25 +1,27 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #f1f1f1;">
-    <a class="navbar-brand" routerLink="/">
-        <img src="assets/img/logo-cruz-roja.jpg" style="width: 50px; height: 30px;">
-    </a>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: rgba(176, 14, 14, 0.979);">
+    <a class="navbar-brand mb-1 mr-3" routerLink="/">
+        <img src="assets/img/whiteCross.png" style="width: 36px; height: 36px; opacity: 0.9;">
+        <!-- <span class="material-icons" style="font-size: 35px;">add_box</span> -->
+    </a>    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <span class="material-icons">menu</span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/">Principal</a>
+        <ul class="navbar-nav">
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="/">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a class="nav-link" routerLink="/kit">Kit de Prevención</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/form">Test COVID-19</a>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" routerLink="/form">Prueba COVID-19</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
                 <a class="nav-link" routerLink="/maps">Mapa de Riesgo</a>
             </li>
         </ul>
