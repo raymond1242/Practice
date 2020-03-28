@@ -19,7 +19,7 @@ const routes: Routes = [
     component: MapsComponent,
   },
   {
-    path: 'kit',
+    path: 'counter',
     component: KitEquipmentComponent,
   },
 ];

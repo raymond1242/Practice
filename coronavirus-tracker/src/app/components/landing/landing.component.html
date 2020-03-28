@@ -1,120 +1,90 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<!-- Navbar (sit on top) -->
 <app-navbar></app-navbar>
 
+
 <div style="background-color: white">
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+<div class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
   <img class="w3-image" src="../../../assets/img/faceResize.jpg" alt="facePerson">
   <div class="center-text-image">
-    <!-- <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1> -->
     <h1>CoronaVirus</h1>
   </div>
-</header>
+</div>
 
-<div class="card-container items-center">
+<br/><br/>
 
+<div class="d-flex justify-content-center">
   <div class="row">
-    <div class="col-auto">
-      <div class="card" style="width: 37rem;">
+    <div class="col desktop-exist">
+      <div class="card">
         <div class="card-body">
-          <h3 class="card-title">Medidas de Prenvencion a Tomar</h3>
+          <h4 class="card-title">Medidas de Prevencion a Tomar</h4>
           <div class="row">
-            <p class="card-text" style="margin-right: 95px; margin-left: 16px;">Siga estas medidass básicas de higiene</p>
-            <a href="https://www.gob.pe/8663" class="btn btn-warning" role="button" aria-disabled="true">Ir a la página</a>
-          </div>
-          
-        </div>
-        <img src="../../../assets/img/silent.jpg" alt="CoronaVirus" height="183px">
-      </div>
-    </div>
-
-    <div class="col-auto">
-      <div class="card" style="background-color: #020202; width: 37rem;">
-        <div class="text-right">
-          <img class="" src="../../../assets/img/faceComplete.jpg" alt="sans" width="280px" height="305px">
-        </div>
-        <div class="card-img-overlay">
-          <div class="card" style="width: 20rem;">
-            <div class="card-body">
-              <h3 class="card-title">Conoce como Protegerte contra el CoronaVirus</h3>
-              <p class="card-text">Aquí encontrarás las medidas, recomendaciones y noticias sobre el COVID-19 en nuestro país.</p>
-              <a href="https://www.gob.pe/coronavirus" class="btn btn-danger" role="button" aria-disabled="true">Ir a la página</a>
+            <div style="margin-left: 10px">
+              <p class="card-text">Siga estas medidas básicas de higiene para poder prevenir el COVID-19.</p>
+              <a href="https://www.gob.pe/8663" class="btn btn-warning button-ref" role="button" aria-disabled="true">
+                Ir a la página
+              </a>
             </div>
-          </div>  
+          </div>
         </div>
+        <img src="../../../assets/img/silent.jpg" class="w3-image" alt="CoronaVirus" height="183px">
       </div>
     </div>
-    
-  </div>
 
+    <div class="col mobile-exist">
+      <a href="https://www.gob.pe/8663" style="text-decoration:none">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Medidas de Prevencion a Tomar</h4>
+            <div class="row">
+              <div style="margin-left: 10px">
+                <p class="card-text">Siga estas medidas básicas de higiene para poder prevenir el COVID-19. Haga click <b style="color:blue">aqui</b></p>
+                <a href="https://www.gob.pe/8663" class="btn btn-warning button-ref" role="button" aria-disabled="true">
+                  Ir a la página
+                </a>
+              </div>
+            </div>
+          </div>
+          <img src="../../../assets/img/silent.jpg" class="w3-image" alt="CoronaVirus" height="183px">
+        </div>
+      </a>
+    </div>
+
+    <div class="col desktop-exist">
+      <div class="card">
+          <div class="card-body">
+            <p class="card-title">Conoce como Protegerte</p>
+            <p class="card-text">Aquí encontrarás las medidas, recomendaciones y noticias sobre el COVID-19.</p>
+            <a href="https://www.gob.pe/coronavirus" class="btn btn-danger button-ref" role="button" aria-disabled="true">Ir a la página</a>
+          </div>
+          <img src="../../../assets/img/originWuhan.jpg" class="w3-image" alt="CoronaVirus" height="183px">
+      </div>
+    </div>
+
+    <div class="col mobile-exist">
+      <a href="https://www.gob.pe/coronavirus" style="text-decoration:none">
+        <div class="card">
+            <div class="card-body">
+              <p class="card-title">Conoce como Protegerte</p>
+              <p class="card-text">Aquí encontrarás las medidas, recomendaciones y noticias sobre el COVID-19. Haga click <b style="color:blue">aqui</b></p>
+              <a href="https://www.gob.pe/coronavirus" class="btn btn-danger button-ref" role="button" aria-disabled="true">Ir a la página</a>
+            </div>
+            <img src="../../../assets/img/originWuhan.jpg" class="w3-image" alt="CoronaVirus" height="183px">
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <img src="assets/img/OMS1.png" class="rand-image" alt="CoronaVirus" class="card">
+    </div>
+
+    <div class="col">
+      <img src="assets/img/OMS2.png" class="rand-image" alt="CoronaVirus" class="card">
+    </div>
+
+  </div>
 </div>
 
-<!-- Page content -->
-<div class="container">
-
-  
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="https://w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-  </div>
-  
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="https://w3schools.com/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
+<br/><br/><br/>
 
 </div>
