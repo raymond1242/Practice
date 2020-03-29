@@ -12,31 +12,17 @@
 }
 
 .container-card{
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 6%;
+    margin-bottom: 6%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .container-t2{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 6%;
+    margin-bottom: 6%;
     margin-left: 10%;
     margin-right: 10%;   
-}
-
-.card-container {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.card-c{
-    width: 400px;
-    height: 350px;
-    margin: auto;
-    margin-top: 30px;
 }
 
 .card{
@@ -52,45 +38,6 @@
     font-size: 20px;
 }
 
-.mobile-exist {
-    display: None;
-}
-
-.desktop-exist {
-    display: block;
-}
-
-@media screen and (max-width: 450px) {
-    .card {
-        width: 200px;
-        height: 300px;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-    .mobile-exist {
-        display: block;
-    }
-
-    .card-title {
-        font-weight: 500;
-        font-size: 20px;
-    }
-
-    .card-text {
-        font-weight: 300;
-        font-size: 12px;
-    }
-
-    .button-ref {
-        display: None;
-    }
-
-    .col {
-        padding: auto;
-    }
-
-    .desktop-exist {
-        display: None;
-    }
+.title-t1{
+    font-size: 55px;
 }
