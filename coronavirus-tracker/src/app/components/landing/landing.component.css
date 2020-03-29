@@ -1,12 +1,28 @@
 .center-text-image {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 
-.container {
-    margin-top: 50px;
+.title-banner{
+    color: rgb(141, 141, 141);
+    font-size: 8vmax;
+    font-weight: bold;
+}
+
+.container-card{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-t2{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    margin-right: 10%;   
 }
 
 .card-container {
@@ -16,11 +32,19 @@
     margin-bottom: 50px;
 }
 
-.card {
+.card-c{
     width: 400px;
     height: 350px;
     margin: auto;
     margin-top: 30px;
+}
+
+.card{
+    border-radius: 6%;
+}
+
+.card-img{
+    border-radius: 6%;
 }
 
 .card-title {
