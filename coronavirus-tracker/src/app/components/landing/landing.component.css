@@ -7,7 +7,7 @@
 
 .title-banner{
     color: rgb(141, 141, 141);
-    font-size: 8vmax;
+    font-size: 6vmax;
     font-weight: bold;
 }
 
@@ -40,4 +40,10 @@
 
 .title-t1{
     font-size: 55px;
+}
+
+@media screen and (max-width: 450px)  {
+    .title-banner {
+        display: none;
+    }
 }
